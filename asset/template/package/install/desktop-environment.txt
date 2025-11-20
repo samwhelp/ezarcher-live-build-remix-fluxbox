@@ -1,0 +1,19 @@
+
+
+##
+## # Desktop Environment
+##
+
+
+
+
+##
+## ## Package / Desktop Environment / Fluxbox
+##
+
+fluxbox
+
+
+tint2
+picom
+rofi
