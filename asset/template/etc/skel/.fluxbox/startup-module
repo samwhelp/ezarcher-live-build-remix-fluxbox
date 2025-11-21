@@ -142,7 +142,16 @@ REF_MASTER_STYLE_DIR_PATH="${REF_MAIN_HELPER_DIR_PATH}/${REF_MASTER_STYLE_DIR_NA
 
 mod_component_policykit_start_portal () {
 
-	mod_component_policykit_start_use_lxqt_policykit_agent
+	mod_component_policykit_start_use_gnome_policykit_agent
+
+	#mod_component_policykit_start_use_lxqt_policykit_agent
+
+	return 0
+}
+
+mod_component_policykit_start_use_gnome_policykit_agent () {
+
+	/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 	return 0
 }
@@ -531,9 +540,9 @@ model_start_by_xdg_autostart () {
 
 model_start () {
 
-	#model_start_by_custom
+	model_start_by_custom
 
-	model_start_by_xdg_autostart
+	#model_start_by_xdg_autostart
 
 	return 0
 }

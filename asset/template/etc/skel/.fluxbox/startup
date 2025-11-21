@@ -58,7 +58,7 @@ fi
 ## ## Run startup-module
 ##
 
-${REF_STARTUP_MODULE_FILE_PATH} &
+bash ${REF_STARTUP_MODULE_FILE_PATH} &
 
 
 ##

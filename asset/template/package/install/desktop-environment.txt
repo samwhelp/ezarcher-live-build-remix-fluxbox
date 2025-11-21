@@ -17,3 +17,8 @@ fluxbox
 tint2
 picom
 rofi
+
+
+## ## for /usr/bin/fbsetbg
+feh
+gxmessage
